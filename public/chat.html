@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/chat.css" />
+    <script src="/script/chat.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="name">Echo Chamber</div>
+    </div>
+    <div id="chatContainer">
+    <ol class="chat" id="chat">
+    </ol>
+    <input id="messageInput" class="textarea" type="text" placeholder="Type here!"
+      onkeydown = "if (event.keyCode == 13) userSubmittedChat();" />
+    </div>
+  </body>
+</html>
