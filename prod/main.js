@@ -27,7 +27,7 @@ console.log(firebase_database_url);
 
 //todo: externalize the databaseUrl here.
 fb_admin.initializeApp({
-  credential: fb_admin.credential.cert('./prod/firebaseConfig.json'),
+  credential: fb_admin.credential.cert(firebase_config),
   databaseURL: firebase_database_url
 });
 var db = fb_admin.database()
