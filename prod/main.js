@@ -116,7 +116,9 @@ expr.get('/history/', function(req,res){
 
 expr.use(express.static('public',{extensions : ['html'], index: "chat.html"}));
 
-var ports = ['3000'];
+var envPort = process.env.PORT ? process.env.PORT : 3000;
+
+var ports = [envPort];
 for(var i in ports){
   expr.listen(ports[i], function(){
     console.log('port ' + ports[i] + ' open.');
