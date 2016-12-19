@@ -7,10 +7,28 @@ var http = require('https');
 
 console.log('Initializing Firebase DB Connection...');
 
+var firebase_config = {
+  "type": "service_account",
+  "project_id": process.env.firebase_project_id,
+  "private_key_id": process.env.firebase_private_key_id,
+  "private_key": process.env.firebase_private_key,
+  "client_email": process.env.firebase_client_email,
+  "client_id": process.env.firebase_client_id,
+  "auth_uri": process.env.firebase_auth_uri,
+  "token_uri": process.env.firebase_token_uri,
+  "auth_provider_x509_cert_url": process.env.firebase_auth_provider_x509_cert_url,
+  "client_x509_cert_url": process.env.firebase_client_x509_cert_url
+};
+
+var firebase_database_url = process.env.firebase_database_url;
+
+console.log(firebase_database_url);
+
+
 //todo: externalize the databaseUrl here.
 fb_admin.initializeApp({
-  credential: fb_admin.credential.cert("prod/firebaseConfig.json"),
-  databaseURL: "https://echochamberdb.firebaseio.com"
+  credential: fb_admin.credential.cert(firebase_config),
+  databaseURL: firebase_database_url
 });
 var db = fb_admin.database()
 console.log('Done.');
