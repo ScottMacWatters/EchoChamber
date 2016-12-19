@@ -11,7 +11,7 @@ var firebase_config = {
   "type": "service_account",
   "project_id": process.env.firebase_project_id,
   "private_key_id": process.env.firebase_private_key_id,
-  "private_key": process.env.firebase_private_key,
+  "private_key": process.env.firebase_private_key.replace(/\\n/g,'\n'),
   "client_email": process.env.firebase_client_email,
   "client_id": process.env.firebase_client_id,
   "auth_uri": process.env.firebase_auth_uri,
@@ -21,8 +21,6 @@ var firebase_config = {
 };
 
 var firebase_database_url = process.env.firebase_database_url;
-
-console.log(firebase_database_url);
 
 
 //todo: externalize the databaseUrl here.
@@ -136,6 +134,8 @@ function saveUserCookieInDb(userCookie,ip){
 function saveChat(userCookie,source,message,date,extras){
   var userRef = db.ref('user');
 
+  console.log(userCookie + '-' + source + ': ' + message);
+
   var chat = {
     source: source,
     message: message,
@@ -143,7 +143,6 @@ function saveChat(userCookie,source,message,date,extras){
     extras: extras
   };
 
-  console.log(chat);
   userRef.child(userCookie).child('message').push(chat);
 };
 
