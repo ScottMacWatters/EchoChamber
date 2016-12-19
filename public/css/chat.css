@@ -2,7 +2,7 @@
 html, body {
     background: #e5e5e5;
     font-family: 'Lato', sans-serif;
-    margin: 0px auto;
+    margin: 0rem auto;
 }
 ::selection{
   background: rgba(82,179,217,0.3);
@@ -16,11 +16,11 @@ a{
 
 .menu {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
     width: 100%;
-    height: 50px;
+    height: 3.2rem;
     background: rgba(122, 122, 122,0.9);
     z-index: 100;
     -webkit-touch-callout: none;
@@ -31,14 +31,14 @@ a{
 
 .back {
     position: absolute;
-    width: 90px;
-    height: 50px;
-    top: 0px;
-    left: 0px;
+    width: 5.625rem;
+    height: 3.2rem;
+    top: 0rem;
+    left: 0rem;
     color: #fff;
-    line-height: 50px;
-    font-size: 30px;
-    padding-left: 10px;
+    line-height: 3.2rem;
+    font-size: 2rem;
+    padding-left: .7rem;
     cursor: pointer;
 }
 .back:active {
@@ -46,20 +46,20 @@ a{
 }
 .name{
     position: absolute;
-    top: 5px;
-    left: 20px;
+    top: .3rem;
+    left: 1.25rem;
     font-family: 'Lato';
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 300;
     color: rgba(255,255,255,1);
     cursor: default;
 }
 .last{
     position: absolute;
-    top: 30px;
-    left: 115px;
+    top: 2rem;
+    left: 7rem;
     font-family: 'Lato';
-    font-size: 11px;
+    font-size: .7rem;
     font-weight: 400;
     color: rgba(255,255,255,0.6);
     cursor: default;
@@ -71,7 +71,7 @@ a{
     list-style: none;
     background: none;
     margin: 0;
-    padding: 0 0 50px 0;
+    padding: 0 0 3.2rem 0;
     margin-top: 4rem;
     margin-bottom: .6rem;
 }
@@ -85,12 +85,12 @@ a{
     display: block;
     text-align: center;
     color: #c0c0c0;
-    height: 20px;
-    text-shadow: 7px 0px 0px #e5e5e5, 6px 0px 0px #e5e5e5, 5px 0px 0px #e5e5e5, 4px 0px 0px #e5e5e5, 3px 0px 0px #e5e5e5, 2px 0px 0px #e5e5e5, 1px 0px 0px #e5e5e5, 1px 0px 0px #e5e5e5, 0px 0px 0px #e5e5e5, -1px 0px 0px #e5e5e5, -2px 0px 0px #e5e5e5, -3px 0px 0px #e5e5e5, -4px 0px 0px #e5e5e5, -5px 0px 0px #e5e5e5, -6px 0px 0px #e5e5e5, -7px 0px 0px #e5e5e5;
-    box-shadow: inset 20px 0px 0px #e5e5e5, inset -20px 0px 0px #e5e5e5, inset 0px -2px 0px #d7d7d7;
-    line-height: 38px;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    height: 1.25rem;
+    text-shadow: .45rem 0rem 0rem #e5e5e5, .38rem 0rem 0rem #e5e5e5, .3rem 0rem 0rem #e5e5e5, .25rem 0rem 0rem #e5e5e5, .2rem 0rem 0rem #e5e5e5, .13rem 0rem 0rem #e5e5e5, .0625rem 0rem 0rem #e5e5e5, .0625rem 0rem 0rem #e5e5e5, 0rem 0rem 0rem #e5e5e5, -.0625rem 0rem 0rem #e5e5e5, -0.125rem 0rem 0rem #e5e5e5, -.19rem 0rem 0rem #e5e5e5, -.25rem 0rem 0rem #e5e5e5, -.31rem 0rem 0rem #e5e5e5, -.38rem 0rem 0rem #e5e5e5, -.44 0rem 0rem #e5e5e5;
+    box-shadow: inset 1.25rem 0rem 0rem #e5e5e5, inset -1.25rem 0rem 0rem #e5e5e5, inset 0rem -0.125rem 0rem #d7d7d7;
+    line-height: 2.4rem;
+    margin-top: .3rem;
+    margin-bottom: 1.25rem;
     cursor: default;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -100,18 +100,18 @@ a{
 
 .other .msg {
     order: 1;
-    border-top-left-radius: 0px;
-    box-shadow: -1px 2px 0px #D4D4D4;
+    border-top-left-radius: 0rem;
+    box-shadow: -.0625rem .13rem 0rem #D4D4D4;
 }
 .other:before {
     content: "";
     position: relative;
-    top: 0px;
-    right: 0px;
-    left: 40px;
-    width: 0px;
-    height: 0px;
-    border: 5px solid #fff;
+    top: 0rem;
+    right: 0rem;
+    left: 2.5rem;
+    width: 0rem;
+    height: 0rem;
+    border: .3rem solid #fff;
     border-left-color: transparent;
     border-bottom-color: transparent;
 }
@@ -122,15 +122,15 @@ a{
 }
 .self .msg {
     order: 1;
-    border-bottom-right-radius: 0px;
-    box-shadow: 1px 2px 0px #D4D4D4;
+    border-bottom-right-radius: 0rem;
+    box-shadow: .0625rem .13rem 0rem #D4D4D4;
 }
 .msg {
     background: white;
-    min-width: 50px;
-    padding: 10px;
-    border-radius: 2px;
-    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.07);
+    min-width: 3.2rem;
+    padding: .7rem;
+    border-radius: .13rem;
+    box-shadow: 0rem .13rem 0rem rgba(0, 0, 0, 0.07);
     max-width: 80%;
 }
 .msg p {
@@ -141,9 +141,9 @@ a{
 .msg img {
     position: relative;
     display: block;
-    width: 450px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 3px #eee;
+    width: 43.2rem;
+    border-radius: .3rem;
+    box-shadow: 0rem 0rem .2rem #eee;
     transition: all .4s cubic-bezier(0.565, -0.260, 0.255, 1.410);
     cursor: default;
     -webkit-touch-callout: none;
@@ -155,7 +155,7 @@ a{
 .msg time {
     font-size: 0.7rem;
     color: #ccc;
-    margin-top: 3px;
+    margin-top: .2rem;
     float: right;
     cursor: default;
     -webkit-touch-callout: none;
@@ -170,54 +170,54 @@ a{
 }
 
 ::-webkit-scrollbar {
-    min-width: 12px;
-    width: 12px;
-    max-width: 12px;
-    min-height: 12px;
-    height: 12px;
-    max-height: 12px;
+    min-width: .75rem;
+    width: .75rem;
+    max-width: .75rem;
+    min-height: .75rem;
+    height: .75rem;
+    max-height: .75rem;
     background: #e5e5e5;
-    box-shadow: inset 0px 50px 0px rgba(82,179,217,0.9), inset 0px -52px 0px #fafafa;
+    box-shadow: inset 0rem 3.2rem 0rem rgba(82,179,217,0.9), inset 0rem -3.25rem 0rem #fafafa;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #bbb;
     border: none;
-    border-radius: 100px;
-    border: solid 3px #e5e5e5;
-    box-shadow: inset 0px 0px 3px #999;
+    border-radius: 6.25rem;
+    border: solid .2rem #e5e5e5;
+    box-shadow: inset 0rem 0rem .2rem #999;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #b0b0b0;
-  box-shadow: inset 0px 0px 3px #888;
+  box-shadow: inset 0rem 0rem .2rem #888;
 }
 
 ::-webkit-scrollbar-thumb:active {
     background: #aaa;
-  box-shadow: inset 0px 0px 3px #7f7f7f;
+  box-shadow: inset 0rem 0rem .2rem #7f7f7f;
 }
 
 ::-webkit-scrollbar-button {
     display: block;
-    height: 26px;
+    height: 1.7rem;
 }
 
 /* T Y P E */
 
 input.textarea {
     position: fixed;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
     width: 100%;
-    height: 50px;
+    height: 3.2rem;
     z-index: 99;
     background: #fafafa;
     border: none;
     outline: none;
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
     color: #666;
     font-weight: 400;
 }
