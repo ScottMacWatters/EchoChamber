@@ -142,6 +142,8 @@ function saveChat(userCookie,source,message,date,extras){
     date: date,
     extras: extras
   };
+
+  console.log(chat);
   userRef.child(userCookie).child('message').push(chat);
 };
 
@@ -183,7 +185,6 @@ function getEcho(userCookie,message,callback){
           var chosenIndex = Math.min(numComments-1, randomCommentIndex);
 
           var comment = postData[1].data.children[chosenIndex].data;
-          console.log(comment);
           //var body = comment.body_html; //todo: decode this?
           var body = comment.body;
           var author = comment.author;
