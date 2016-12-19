@@ -72,38 +72,13 @@ a{
     background: none;
     margin: 0;
     padding: 0 0 50px 0;
-    margin-top: 60px;
-    margin-bottom: 10px;
+    margin-top: 4rem;
+    margin-bottom: .6rem;
 }
 .chat li {
     padding: 0.5rem;
     overflow: hidden;
     display: flex;
-}
-.chat .avatar {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    display: block;
-    z-index: 2;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    background-color: rgba(255,255,255,0.9);
-}
-.chat .avatar img {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    background-color: rgba(255,255,255,0.9);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 .chat .day {
     position: relative;
@@ -156,6 +131,7 @@ a{
     padding: 10px;
     border-radius: 2px;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.07);
+    max-width: 80%;
 }
 .msg p {
     font-size: 0.8rem;
@@ -175,16 +151,6 @@ a{
     -moz-user-select: none;
     -ms-user-select: none;
 }
-@media screen and (max-width: 800px) {
-    .msg img {
-    width: 300px;
-}
-}
-@media screen and (max-width: 550px) {
-    .msg img {
-    width: 200px;
-}
-}
 
 .msg time {
     font-size: 0.7rem;
@@ -197,28 +163,6 @@ a{
     -moz-user-select: none;
     -ms-user-select: none;
 }
-
-emoji{
-    display: inline-block;
-    height: 18px;
-    width: 18px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: -7px;
-    margin-right: 2px;
-    transform: translate3d(0px, 3px, 0px);
-}
-emoji.please{background-image: url(http://imgur.com/ftowh0s.png);}
-emoji.lmao{background-image: url(http://i.imgur.com/MllSy5N.png);}
-emoji.happy{background-image: url(http://imgur.com/5WUpcPZ.png);}
-emoji.pizza{background-image: url(http://imgur.com/voEvJld.png);}
-emoji.cryalot{background-image: url(http://i.imgur.com/UUrRRo6.png);}
-emoji.books{background-image: url(http://i.imgur.com/UjZLf1R.png);}
-emoji.moai{background-image: url(http://imgur.com/uSpaYy8.png);}
-emoji.suffocated{background-image: url(http://i.imgur.com/jfTyB5F.png);}
-emoji.scream{background-image: url(http://i.imgur.com/tOLNJgg.png);}
-emoji.hearth_blue{background-image: url(http://i.imgur.com/gR9juts.png);}
-emoji.funny{background-image: url(http://i.imgur.com/qKia58V.png);}
 
 @-webikt-keyframes pulse {
   from { opacity: 0; }
