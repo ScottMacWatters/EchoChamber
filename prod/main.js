@@ -167,7 +167,8 @@ function getEcho(userCookie,message,callback){
     try{
       var numResults = searchData.data.children.length;
       var chosenIndex = Math.min(numResults-1, randomIndex);
-      var permalinkFull = searchData.data.children[chosenIndex].data.permalink;
+      var chosenPost = searchData.data.children[chosenIndex].data;
+      var permalinkFull = chosenPost.permalink;
       var permalinkTokens = permalinkFull.split('?');
       var newPath = '';
       for(var i = 0; i < permalinkTokens.length; i++){
@@ -188,7 +189,14 @@ function getEcho(userCookie,message,callback){
           var body = comment.body;
           var author = comment.author;
 
-          callback(body, { origin: 'Reddit', author: author});
+          var extras = {};
+          extras.origin = 'Reddit';
+          extras.author = author;
+          extras.permalink = permalinkFull;
+          extras.subreddit = chosenPost.subreddit;
+
+
+          callback(body, extras);
         }
         catch(e){
           console.log(e);
